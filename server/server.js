@@ -74,7 +74,7 @@ app.delete('/todos/:id', (req, res) => {
         }
 
         // if todo - send it back
-        res.send(todo);
+        res.send({todo});
     }).catch((e) => {
         // error
             // 400 with empty body
